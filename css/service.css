@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(242, 242, 242);
+}
+
+.navbar-nav li a {
+  font-size: 1.125rem;
+}
+
+
+/* Line with animation */
+.underline {
+  width: 0;
+  height: 3px;
+  background-color: #9f0303;
+  animation: expandLine 2s ease-out forwards;
+}
+
+@keyframes expandLine {
+  form {
+    width: 0;
+  }
+
+  to {
+    width: 100px;
+  }
+}
+
+
+
+/* Hero section ends ---------------------------*/
+
+
+/* Footer section */
+.footer-heading {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.footer-heading:hover {
+  color: rgb(51, 111, 241);
+}
+
+/* --------footer ends------------------ */
+
+/* Responsive styles 
+Desktop-first Approach */
+
+@media (min-width: 768px) {
+
+  /* from md and above */
+  .footer-heading {
+    font-size: 4.5rem !important;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+
+}

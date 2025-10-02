@@ -34,7 +34,12 @@ body {
 
 /* Hero section */
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
+  background-image: url("/images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
 }
 
 /* Hero-resume button  */
@@ -67,6 +72,7 @@ body {
 .footer-heading:hover {
   color: rgb(51, 111, 241);
 }
+
 /* --------footer ends------------------ */
 
 /* Responsive styles 

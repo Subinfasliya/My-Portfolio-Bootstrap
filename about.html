@@ -7,64 +7,105 @@
     <meta name="description" content="About Page in Subin's Portfolio Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/about.css">
 </head>
 
 <body>
-    <!-- header container -->
-    <header class="header-container">
+    <!-- Header section -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-light ">
+            <div class="container py-2 ">
 
-        <!-- Logo Text -->
-        <a class="logo" href="">. Subin T S</a>
+                <!-- Brand or Logo -->
+                <a class="navbar-brand fw-bold fs-3" href="#">. subin t s</a>
 
-        <!-- Navigation Links -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Hamburger menu ends -->
+
+                <!-- Collapse or Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collapse or Navbar links ends -->
+
+            </div>
         </nav>
-        <!-- Hamburger Button -->
-        <div class="hamburger-container">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <!-- Navbar ends -->
+
     </header>
+    <!-- Header section ends -->
 
     <!-- Main section -->
     <main>
         <!-- Hero section in About Page -->
-        <section class="hero-container">
-            <!-- hero text -->
-            <div class="hero-text">
-                <div class="underline"></div>
-                <h1>About Me</h1>
+        <section class="container hero">
+            <div class="row mt-5 d-flex align-items-center text-center text-md-start">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+
+                    <!-- Underline -->
+                    <div class="underline mx-auto mx-md-0"></div>
+                    <!-- underline div ends -->
+
+                    <h1 class="fw-bold mb-5 hero-title">About Me</h1>
+
+                </div>
+
+                <div class="col-12 col-md-6 order-1 mb-5 order-md-2">
+                    <div class="text-end mt-2">
+                        <img src="images/about-image.png" alt="Profile Image of Subin"
+                            class="rounded-circle shadow img-fluid p-2 " width="500px" height="auto">
+                    </div>
+                </div>
+
             </div>
-            <!-- project profile Image -->
-            <div class="image-container"><img src="images/about-image.png" alt="Profile Image of Subin"></div>
         </section>
+        <!-- Hero section in About Page ends -->
 
-        <section>
-            <div class="about-container">
+        <!-- About section -->
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2 class="fw-bold mb-4 sub-title">About</h2>
 
-
-                <!-- Description Division -->
-                <div class="description">
-                    <h2 class="sub-title">About</h2>
+                    <!-- Brief Description About me -->
                     <article>
-                        <!-- Brief Description About me -->
-                        <p>Hi, I&apos;m Subin. I&apos;m currently studying Web Development at Entri and learning to
+                        <p class="fs-3 fw-bold  text-md-justify">Hi, I&apos;m Subin. I&apos;m currently studying Web
+                            Development at Entri and learning to
                             build
                             responsive
                             and
@@ -73,107 +114,105 @@
                             improving
                             my skills to become a professional web developer.</p>
                     </article>
+                    <!-- Brief Description About me ends -->
                 </div>
 
-
-                <!-- Address division -->
-                <div class="address">
-                    <h2 class="sub-title">Address</h2>
-                    <address>
-                        <div>
-                            <p>
-                                <span class="address-text">Email: </span>
-                                <a class="address-mail" href="mailto:subinfasliya@gmail.com">
-                                    subinfasliya@gmail.com
-                                </a>
-                            </p>
-                        </div>
-
-                        <div>
-                            <p class="address-text">Location: <span class="address-location"> Ponnani,Malappuram</span>
-                            </p>
-                        </div>
+                <div class="col-12 col-md-12 pb-5 mb-2">
+                    <h3 class="fw-bold mb-3 sub-title">Address</h3>
+                    <address class="fs-4">
+                        <span class="fw-bold fs-3">Email:</span> <a class="text-decoration-none text-dark" href="mailto:subinfasliya@gmail.com">
+                            subinfasliya@gmail.com
+                        </a>
+                        <br>
+                        <span class="fw-bold fs-3">Location:</span> Edappal, Malappuram
                     </address>
                 </div>
             </div>
         </section>
+         <!-- About section ends -->
     </main>
 
     <!-- Footer section -->
-    <footer>
-        <!-- Footer Container -->
-        <div class="footer-container">
-            <!-- Footer text section -->
-            <div class="footer-text">
-                <p>Based in Kerala, working worldwide.</p>
-                <a href="#">Get in touch</a>
+    <footer class="container-fluid bg-dark text-white py-4 ">
+        <div class="container pt-5">
+            <div class="row text-center text-md-start">
+
+                <!-- Footer text section -->
+                <div class="col-12 col-md-8 mb-5">
+                    <p class="mb-1 fs-5">Based in Kerala, working worldwide.</p>
+                    <a class="footer-heading fs-1 fs-md-0" href="#">Get in touch</a>
+                </div>
+                <!-- Footer text section ends-->
+
+                <!-- Footer links section -->
+                <div class="col-12 col-md-4">
+
+                    <div class="row">
+                        <!-- Social Links -->
+                        <div class="col-md-6 mb-3">
+                            <h5 class="fw-bold">Social</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://x.com/Subin_T_S_" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=61575574979113" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/subin-t-s-049496255/" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Subinfasliya" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social links ends -->
+
+                        <!-- Services Links -->
+                        <div class="col-md-6 mb-3">
+                            <h5 class="fw-bold">Services</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" target="_blank" class="text-white text-decoration-none">
+                                        Web Development
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="text-white text-decoration-none">
+                                        Web Designing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Service Links ends -->
+                    </div>
+                </div>
+                <!-- Footer Links section ends -->
             </div>
 
-            <!-- Footer  links section -->
-            <div class="footer-links">
-
-                <!-- Social Links  -->
-                <div class="social">
-                    <h2>Social</h2>
-                    <!-- Navigaton links for social media -->
-                    <nav>
-                        <ul>
-                            <li>
-                                <!-- Link for Twitter -->
-                                <a href="https://x.com/Subin_T_S_" target="_blank">
-                                    Instagram
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Facebook -->
-                                <a href="https://www.facebook.com/profile.php?id=61575574979113" target="_blank">
-                                    Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Linkedin -->
-                                <a href="https://www.linkedin.com/in/subin-t-s-049496255/" target="_blank">
-                                    Linkedin
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for GitHub -->
-                                <a href="https://github.com/Subinfasliya" target="_blank">
-                                    GitHub
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Services Links  -->
-                <div class="service">
-                    <h2>Services</h2>
-                    <nav>
-                        <ul>
-                            <li>
-                                <!-- Link for Web Development -->
-                                <a href="#" target="_blank">
-                                    Web Development
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Web Designing -->
-                                <a href="#" target="_blank">
-                                    Web Designing
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0 text-secondary">&copy; 2025 Subin. All Rights Reserved.</p>
         </div>
-        <hr>
-        <p class="copyright">Copyright &copy; 2025 Subin. All Rights Reserved.</p>
     </footer>
+    <!-- footer section ends -->
 
-    <!-- Handburger menu JS -->
-    <script src="javascript/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS ends -->
 </body>
 
 </html>
