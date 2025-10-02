@@ -7,204 +7,281 @@
     <meta name="description" content="Projects page in Subin's Portfolio Website.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/projects.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/projects.css">
 </head>
 
 <body>
     <!-- Header section -->
-    <header class="header-container">
-        <!-- Logo Text -->
-        <a class="logo" href="">. Subin T S</a>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-light ">
+            <div class="container py-2 ">
 
-        <!-- Navigation Links -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <!-- Brand or Logo -->
+                <a class="navbar-brand fw-bold fs-3" href="#">. subin t s</a>
+
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Hamburger menu ends -->
+
+                <!-- Collapse or Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collapse or Navbar links ends -->
+
+            </div>
         </nav>
-        <!-- Hamburger Button -->
-        <div class="hamburger-container">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <!-- Navbar ends -->
+
     </header>
+    <!-- Header section ends -->
 
     <!-- Main section -->
     <main>
         <!-- Hero section in Project Page -->
-        <section class="hero-container">
-            <!-- Hero text  -->
-            <div class="hero-text">
-                <div class="underline"></div>
-                <h1>My Projects</h1>
-            </div>
-            <!-- project profile Image -->
-            <div class="image-container">
-                <img src="images/project-profile1.jpg" alt="Project Planning Image">
-            </div>
+        <section class="container hero">
 
+            <div class="row mt-5 d-flex align-items-center text-center text-md-start">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+
+                    <!-- Underline -->
+                    <div class="underline mx-auto mx-md-0"></div>
+                    <!-- underline div ends -->
+
+                    <h1 class="fw-bold mt-2 hero-title">My Projects</h1>
+
+                </div>
+
+                <div class="col-12 col-md-6 order-1 mb-5 order-md-2">
+                    <div class="text-end mt-2">
+                        <img src="images/project-profile1.jpg" alt="Project Planning Image"
+                            class="rounded-circle shadow img-fluid p-2 " width="500px" height="auto">
+                    </div>
+                </div>
+
+            </div>
         </section>
+        <!-- Hero section ends -->
 
         <!-- Project section -->
-        <section id="project">
+        <section class="container mb-5 py-5">
+            <h2 class="text-center fw-medium mb-5 sub-title">Projects</h2>
+            <div class="row g-5 ">
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <!-- first project card -->
+                    <div class="card h-100 project-card">
 
-            <h2 class="sub-heading">Projects</h2>
+                        <!-- Card Image -->
+                        <img src="images/project-elegant.png" alt="Elegant Linings Website Image" class="card-img-top"
+                            height="240px">
+                        <!-- card body -->
+                        <div class="card-body">
 
-            <!-- Project Container -->
-            <div class="project-container">
+                            <!-- card Title -->
+                            <h5 class="card-title">Elegant Linings</h5>
+                            <!-- card Title ends -->
 
-                <!-- First Project -->
-                <div class="project-card">
-                    <!-- Project Image -->
-                    <img src="images/project-elegant.png" alt="Elegant Linings Website Image">
-                    <!-- card body -->
-                    <div class="card-body">
-                        <h3>Elegant Linings</h3>
-                        <!-- Short Description of Project -->
-                        <p>
-                            Created static website with Contact
+                            <!-- Short Descrption of Project -->
+                            <p class="card-text"> Created static website with Contact
                             form using HTML CSS and JavaScript.
-                        </p>
-                    </div>
-                    <!-- Deployed project Link -->
-                    <div class="project-btn">
-                        <a href="https://elegantlinings.netlify.app" target="_blank">View</a>
-                    </div>
+                            </p>
+                            <!-- Short Descrption ends -->
 
+                            <!-- Card button -->
+                            <a class="btn btn-primary text-white w-100" href="https://elegantlinings.netlify.app"
+                                target="_blank">View</a>
+                            <!-- card button ends -->
+
+                        </div>
+                        <!-- Card body ends -->
+                    </div>
+                    <!-- first project card ends -->
                 </div>
 
-                <!-- Second Project -->
-                <div class="project-card">
-                    <!-- Project Image -->
-                    <img src="https://images.pexels.com/photos/4467739/pexels-photo-4467739.jpeg"
-                        alt="Trading House Website Image Not Available">
-                    <!-- card body -->
-                    <div class="card-body">
-                        <h3>Trading House</h3>
-                        <!-- Short Descrption of Project -->
-                        <p>This Web-Application is created with MERN technologies.</p>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- second project card -->
+                    <div class="card h-100 project-card">
 
-                    <!-- Project Link -->
-                    <div class="project-btn">
-                        <a href="https://github.com/Subinfasliya/Trading-course-website-MERN_STACK_APP"
-                            target="_blank">View
-                        </a>
-                    </div>
+                        <!-- Card Image -->
+                        <img src="https://images.pexels.com/photos/4467739/pexels-photo-4467739.jpeg"
+                            alt="Trading House Website Image Not Available" class="card-img-top" height="240px">
+                        <!-- card body -->
+                        <div class="card-body">
 
+                            <!-- card Title -->
+                            <h5 class="card-title">Trading House</h5>
+                            <!-- card Title ends -->
+
+                            <!-- Short Descrption of Project -->
+                            <p class="card-text">This Web-Application is created with MERN technologies.
+                            </p>
+                            <!-- Short Descrption ends -->
+
+                            <!-- Card button -->
+                            <a class="btn btn-primary text-white w-100"
+                                href="https://github.com/Subinfasliya/Trading-course-website-MERN_STACK_APP"
+                                target="_blank">View</a>
+                            <!-- card button ends -->
+
+                        </div>
+                        <!-- Card body ends -->
+                    </div>
+                    <!-- second project card ends -->
                 </div>
 
-                <!-- Third Project -->
-                <div class="project-card">
-                    <!-- Project Image -->
-                    <img src="images/contactform-project.png" alt="A Contact Form Image">
-                    <!-- card body -->
-                    <div class="card-body">
-                        <h3>Contact Form</h3>
-                        <!-- Short Descrption of Project -->
-                        <p>This Webpage is created with HTML CSS and CSS-Flexbox</p>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Third project card -->
+                    <div class="card h-100 project-card">
 
-                    <!-- Project Link -->
-                    <div class="project-btn">
-                        <a href="https://github.com/Subinfasliya/Trading-course-website-MERN_STACK_APP"
-                            target="_blank">View
-                        </a>
+                        <!-- Card Image -->
+                        <img src="images/contactform-project.png" alt="A Contact Form Image" class="card-img-top"
+                            height="240px">
+                        <!-- card body -->
+                        <div class="card-body">
+
+                            <!-- card Title -->
+                            <h5 class="card-title">Contact Form</h5>
+                            <!-- card Title ends -->
+
+                            <!-- Short Descrption of Project -->
+                            <p class="card-text">This Webpage is created with HTML CSS and CSS-Flexbox.
+                            </p>
+                            <!-- Short Descrption ends -->
+
+                            <!-- Card button -->
+                            <a class="btn btn-primary text-white w-100"
+                                href="https://github.com/Subinfasliya/Contact-form-CSS-flexbox"
+                                target="_blank">View</a>
+                            <!-- card button ends -->
+
+                        </div>
+                        <!-- Card body ends -->
                     </div>
+                    <!-- Third project card ends -->
                 </div>
             </div>
         </section>
+
+
 
 
     </main>
 
     <!-- Footer section -->
-    <footer>
-        <!-- Footer Container -->
-        <div class="footer-container">
-            <!-- Footer text section -->
-            <div class="footer-text">
-                <p>Based in Kerala, working worldwide.</p>
-                <a href="#">Get in touch</a>
+    <footer class="container-fluid bg-dark text-white py-4 ">
+        <div class="container pt-5">
+            <div class="row text-center text-md-start">
+
+                <!-- Footer text section -->
+                <div class="col-12 col-md-8 mb-5">
+                    <p class="mb-1 fs-5">Based in Kerala, working worldwide.</p>
+                    <a class="footer-heading fs-1 fs-md-0" href="#">Get in touch</a>
+                </div>
+                <!-- Footer text section ends-->
+
+                <!-- Footer links section -->
+                <div class="col-12 col-md-4">
+
+                    <div class="row">
+                        <!-- Social Links -->
+                        <div class="col-md-6 mb-3">
+                            <h5 class="fw-bold">Social</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://x.com/Subin_T_S_" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=61575574979113" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/subin-t-s-049496255/" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Subinfasliya" target="_blank"
+                                        class="text-white text-decoration-none">
+                                        GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social links ends -->
+
+                        <!-- Services Links -->
+                        <div class="col-md-6 mb-3">
+                            <h5 class="fw-bold">Services</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" target="_blank" class="text-white text-decoration-none">
+                                        Web Development
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="text-white text-decoration-none">
+                                        Web Designing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Service Links ends -->
+                    </div>
+                </div>
+                <!-- Footer Links section ends -->
             </div>
 
-            <!-- Footer  links section -->
-            <div class="footer-links">
-
-                <!-- Social Links  -->
-                <div class="social">
-                    <h2>Social</h2>
-                    <!-- Navigaton links for social media -->
-                    <nav>
-                        <ul>
-                            <li>
-                                <!-- Link for Twitter -->
-                                <a href="https://x.com/Subin_T_S_" target="_blank">
-                                    Instagram
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Facebook -->
-                                <a href="https://www.facebook.com/profile.php?id=61575574979113" target="_blank">
-                                    Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Linkedin -->
-                                <a href="https://www.linkedin.com/in/subin-t-s-049496255/" target="_blank">
-                                    Linkedin
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for GitHub -->
-                                <a href="https://github.com/Subinfasliya" target="_blank">
-                                    GitHub
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Services Links  -->
-                <div class="service">
-                    <h2>Services</h2>
-                    <nav>
-                        <ul>
-                            <li>
-                                <!-- Link for Web Development -->
-                                <a href="#" target="_blank">
-                                    Web Development
-                                </a>
-                            </li>
-                            <li>
-                                <!-- Link for Web Designing -->
-                                <a href="#" target="_blank">
-                                    Web Designing
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0 text-secondary">&copy; 2025 Subin. All Rights Reserved.</p>
         </div>
-        <hr>
-        <p class="copyright">Copyright &copy; 2025 Subin. All Rights Reserved.</p>
     </footer>
 
-    <!-- Handburger menu JS -->
-    <script src="javascript/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS ends -->
 </body>
 
 </html>

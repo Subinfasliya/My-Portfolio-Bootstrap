@@ -20,9 +20,6 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/css/index.css">
 
@@ -32,8 +29,8 @@
     <!-- Header section -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md bg-light">
-            <div class="container py-2">
+        <nav class="navbar navbar-expand-md bg-light ">
+            <div class="container py-2 ">
 
                 <!-- Brand or Logo -->
                 <a class="navbar-brand fw-bold fs-3" href="#">. subin t s</a>
@@ -76,9 +73,9 @@
     <main>
         <!-- Hero section -->
         <section class="container  hero">
-            <div class="row mt-5 g-5 text-center text-md-start align-items-center">
+            <div class="row mt-5 text-center text-md-start">
 
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-center col-md-6 order-2 order-md-1">
+                <div class="col-12 d-flex flex-column justify-content-center col-md-6 order-2 order-md-1">
                     <p class="text-uppercase fw-medium">Hello, My name is</p>
 
                     <!-- Underline for styling purpose -->
@@ -96,12 +93,13 @@
 
                 </div>
 
-                <div class="col-12 col-md-6 mb-5 order-1 order-md-2">
-                    <div class="container  img-container text-md-end">
-                        <img src="images/profile.jpg" alt="Profile Image of Subin" class="rounded-circle mw-100"
-                            width="500px" height="auto">
-                    </div>
+                <div class="col-12 col-md-6 mb-5 order-1 order-md-2 text-md-end" >
+                    <!-- <div class="img-container text-md-end"> -->
+                    <img src="images/profile.jpg" alt="Profile Image of Subin"
+                        class="rounded-circle object-fit-contain shadow img-fluid p-2 mt-2" width="500px" height="auto">
+                    <!-- </div> -->
                 </div>
+
             </div>
         </section>
         <!-- Hero section ends -->
@@ -112,7 +110,8 @@
                 <h2 class="fw-bold mb-4" style="color:#9f0303;">About me</h2>
                 <div class="col-12">
                     <article>
-                        <p class="fw-medium about-para">Hi, I&apos;m Subin. I&apos;m currently studying Web Development at
+                        <p class="fw-medium about-para">Hi, I&apos;m Subin. I&apos;m currently studying Web Development
+                            at
                             Entri and learning to
                             build
                             responsive
@@ -130,19 +129,20 @@
 
 
     <!-- Footer section -->
-    <footer class="container-fluid bg-dark text-white py-4">
+    <footer class="container-fluid bg-dark text-white py-4 ">
         <div class="container pt-5">
             <div class="row text-center text-md-start">
 
                 <!-- Footer text section -->
-                <div class="col-md-8 mb-5">
+                <div class="col-12 col-md-8 mb-5">
                     <p class="mb-1 fs-5">Based in Kerala, working worldwide.</p>
                     <a class="footer-heading fs-1 fs-md-0" href="#">Get in touch</a>
                 </div>
                 <!-- Footer text section ends-->
 
                 <!-- Footer links section -->
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
+
                     <div class="row">
                         <!-- Social Links -->
                         <div class="col-md-6 mb-3">
@@ -199,7 +199,7 @@
             </div>
 
             <hr class="border-light">
-            <p class="text-center mb-0">&copy; 2025 Subin. All Rights Reserved.</p>
+            <p class="text-center mb-0 text-secondary">&copy; 2025 Subin. All Rights Reserved.</p>
         </div>
     </footer>
 
